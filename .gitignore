@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+Market_historical_data/data/raw/*.csv
+Market_historical_data/data/processed/*.csv
+Market_historical_data/outputs/*/models/*.pt
+Market_historical_data/outputs/*/predictions/*.csv
+Market_historical_data/outputs/*/representations/*.csv
+Market_historical_data/outputs/*/plots/*.png
+Market_historical_data/outputs/*/losses/*.csv
+Market_historical_data/outputs/*/metadata/*.json
+Market_historical_data/outputs/*/metrics.csv

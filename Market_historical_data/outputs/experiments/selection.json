@@ -1,0 +1,18 @@
+{
+  "selected_candidate": "lr0.001_cls0.1",
+  "selection_rule": "Validation only: average per-ticker metric ranks; directional accuracy rank 60%, MAE rank 20%, RMSE rank 20%; ties use lower mean MAE, then RMSE.",
+  "training_config": {
+    "model_type": "hybrid_lstm_gru",
+    "epochs": 30,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "patience": 8,
+    "seed": 44,
+    "hidden_size": 64,
+    "num_layers": 2,
+    "dropout": 0.1,
+    "classification_loss_weight": 0.1,
+    "return_loss_scale": 0.01
+  },
+  "test_used_for_tuning": false
+}

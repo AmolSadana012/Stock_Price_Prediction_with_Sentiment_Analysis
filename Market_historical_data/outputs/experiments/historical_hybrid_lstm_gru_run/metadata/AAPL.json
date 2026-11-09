@@ -1,0 +1,43 @@
+{
+  "ticker": "AAPL",
+  "model_type": "hybrid_lstm_gru",
+  "training_config": {
+    "model_type": "hybrid_lstm_gru",
+    "epochs": 30,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "patience": 8,
+    "seed": 42,
+    "hidden_size": 64,
+    "num_layers": 2,
+    "dropout": 0.1,
+    "classification_loss_weight": 0.1,
+    "return_loss_scale": 0.01
+  },
+  "best_epoch": 6,
+  "feature_columns": [
+    "Open",
+    "High",
+    "Low",
+    "Close",
+    "Adj Close",
+    "Volume",
+    "Daily_Return",
+    "SMA_20",
+    "SMA_50",
+    "EMA_12",
+    "EMA_26",
+    "RSI_14",
+    "MACD",
+    "MACD_Signal",
+    "MACD_Histogram",
+    "Volatility_20"
+  ],
+  "lookback_days": 30,
+  "split_target_samples": {
+    "train": 1343,
+    "validation": 294,
+    "test": 295
+  },
+  "device": "cpu"
+}
